@@ -46,3 +46,7 @@ select node
 * method: GET
 * input: empty
 * output: { data: { nodes: [{ id, name, desc }], linkes: [{ id, source, target }] }
+
+# others
+## resource
+https://docs.mongodb.com
