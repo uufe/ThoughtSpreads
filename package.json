@@ -4,8 +4,8 @@
   "description": "[TOC] # db_tables ## node id   name   desc   isdeleted",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/index.js",
-    "start-brk": "node --inspect-brk ./server/index.js"
+    "server-start": "node ./server/index.js",
+    "server-start-brk": "node --inspect-brk ./server/index.js"
   },
   "repository": {
     "type": "git",
