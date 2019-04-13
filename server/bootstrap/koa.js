@@ -10,9 +10,13 @@ module.exports = async function() {
 
   var router = new Router();
 
-  
+// .get('/ts/node', async (ctx, next) => {
+//   const ctl = require('./controller/node/select.js');
+//   await ctl(ctx);
+// })
+
   routerConfig.forEach(({ method, requestPath, controllerPath })=>{
-  debugger;
+    debugger;
     router[method](requestPath, async(ctx)=>{
       const ctl = require(controllerPath);
       await ctl(ctx);

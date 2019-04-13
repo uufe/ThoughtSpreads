@@ -1,4 +1,4 @@
-const mongoosebase = require('./db/connection.js');
+const mongoosebase = require('@root/db/connection.js');
 
 module.exports = async function() {
   await mongoosebase.connectDB();

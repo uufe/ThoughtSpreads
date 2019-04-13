@@ -17,9 +17,9 @@ module.exports = async function(ctx) {
   // debugger;
 
   // if(res.insertedCount === 1){
-    ctx.body = { 
-      errno: 0, 
-      errmsg: 'ok', 
+    ctx.body = {
+      errno: 0,
+      errmsg: 'ok',
       data: res
     };
   // } else {
