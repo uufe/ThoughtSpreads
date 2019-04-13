@@ -1,0 +1,29 @@
+{
+  "node": [{
+    "id": 1,
+    "name": "node1",
+    "desc": "node1 desc",
+    "isDeleted": false
+  }, {
+    "id": 2,
+    "name": "node2",
+    "desc": "node2 desc",
+    "isDeleted": false
+  }, {
+    "id": 3,
+    "name": "node3",
+    "desc": "node3 desc",
+    "isDeleted": false
+  }],
+  "link": [{
+    "id": 1,
+    "source": 1,
+    "target": 2,
+    "isDeleted": false
+  }, {
+    "id": 2,
+    "source": 1,
+    "target": 3,
+    "isDeleted": false
+  }]
+}
