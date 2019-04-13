@@ -66,3 +66,15 @@ select node
 # others
 ## resource
 https://docs.mongodb.com
+
+# todo
+## server
+### 2019 Apr 13
+优先级排序
+* 接口测试，postman
+* 接口参数验证
+* link功能
+* 自动化部署，build.sh
+* 接口自动化测试，非postman
+* type script
+
