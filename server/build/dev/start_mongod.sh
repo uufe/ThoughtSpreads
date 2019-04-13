@@ -1,0 +1,1 @@
+mongod --port 27027 --dbpath /Users/gaozhenze/Documents/localbin/mongo/database

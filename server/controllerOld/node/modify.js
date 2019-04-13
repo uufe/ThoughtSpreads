@@ -2,7 +2,7 @@ const dbbase = require('../../db/base.js');
 const ObjectID = require('mongodb').ObjectID;
 
 module.exports = async function(ctx) {
-  const { id, name, desc, parentid } = ctx.query;
+  const { id, name, desc, parentid } = ctx.request.body;
   
   const db = await dbbase.getDb();
   const node = db.collection('node');
@@ -12,7 +12,7 @@ module.exports = async function(ctx) {
     { upsert: true }
   );
   
-  debugger;
+  // debugger;
 
   if(res.modifiedCount === 1){
     ctx.body = { 
@@ -22,7 +22,7 @@ module.exports = async function(ctx) {
   } else {
     ctx.body = { 
       errno: -1, 
-      errmsg: 'unhandled error'
+      errmsg: 'res.modifiedCount != 1'
     };
   }
   

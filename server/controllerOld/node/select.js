@@ -14,7 +14,7 @@ module.exports = async function(ctx) {
     delete item.isdeleted;
   })
 
-  debugger;
+  // debugger;
 
   // if(res.insertedCount === 1){
     ctx.body = { 

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-mongod": "nohup sh ./build/dev/start_mongod.sh &",
+    "dev": "sh ./build/dev/pm2.sh"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,9 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-router": "^7.4.0",
-    "mongodb": "^3.2.2"
-  }
+    "koa-bodyparser": "^4.2.1",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.5.1"
+  },
+  "devDependencies": {}
 }

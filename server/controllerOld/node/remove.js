@@ -12,7 +12,7 @@ module.exports = async function(ctx) {
     { upsert: true }
   );
   
-  debugger;
+  // debugger;
 
   if(res.modifiedCount === 1){
     ctx.body = { 
@@ -22,7 +22,7 @@ module.exports = async function(ctx) {
   } else {
     ctx.body = { 
       errno: -1, 
-      errmsg: 'unhandled error'
+      errmsg: 'res.modifiedCount != 1'
     };
   }
   

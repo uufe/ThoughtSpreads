@@ -1,7 +1,7 @@
 const dbbase = require('../../db/base.js');
 
 module.exports = async function(ctx) {
-  const { name, desc, parentid } = ctx.query;
+  const { name, desc, parentid } = ctx.request.body;
   
   const db = await dbbase.getDb();
   const node = db.collection('node');
@@ -10,9 +10,9 @@ module.exports = async function(ctx) {
   debugger;
 
   if(res.insertedCount === 1){
-    ctx.body = { 
-      errno: 0, 
-      errmsg: 'ok', 
+    ctx.body = {
+      errno: 0,
+      errmsg: 'ok',
       data: {
         newid: res.insertedId.toString()
       }
