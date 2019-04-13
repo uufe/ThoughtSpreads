@@ -85,7 +85,7 @@
 
 
 # 专业化方向
-1. River
+1. RIver
     * NodeJS
     * 跨端
     * Linux
