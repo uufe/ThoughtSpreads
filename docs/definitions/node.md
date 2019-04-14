@@ -75,6 +75,7 @@
 ## Git
 ## Scrum/Sprint
 ## Automation
+## Computer Terms
 
 # Database
 ## SQL
